@@ -1,0 +1,175 @@
+:root {
+    --background-color: rgb(6, 11, 25);
+    --border-color: rgb(255, 255, 255, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Rubik:wght@900&family=Space+Mono:wght@700&display=swap');
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, a, p, span {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    height: 115px;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+
+nav > .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-logo-section,
+#nav-link-section {
+    flex-basis: calc(100% / 3);
+}
+
+#nav-social-section,
+#nav-contact-section {
+    flex-grow: 1;
+}
+
+#nav-logo-section {
+
+    justify-content: flex-start;
+}
+
+#nav-link-section {
+    gap: 6rem;
+}
+
+#nav-social-section {
+    gap: 6rem;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main > article > .article-section {
+    height: 100%;
+}
+
+main > article > .article-description-section,
+main > article > .article-nav-section {
+    border-left: 1px solid var(--border-color);
+}
+
+main > article > .article-description-section {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+}
+
+main > article > .article-title-section,
+main > article > .article-nav-section {
+    border-top: 1px solid var(--border-color);
+}
+
+main > article > .article-image-section {
+    background-image: url(IMG/article1.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+main > article > .article-title-section > h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 75px;
+    padding: 70px;
+}
+
+main > article > .article-nav-section > .button {
+    height: 100%;
+    width: 50%;
+    font-size: 100px;
+    background-color: var(--background-color);
+    display: inline-block;
+    border: none;
+    border-right: 1px solid var(--border-color);
+    color: white;
+}
+
+main > article > .article-nav-section > .buttonr {
+    height: 100%;
+    width: 50%;
+    font-size: 100px;
+    background-color: var(--background-color);
+    display: inline-block;
+    border: none;
+    color: white;
+}
+
+main > article > .article-nav-section {
+    display: flex;
+}
+
+main > .loganishhacker {
+    font-family: 'Space Mono', monospace;
+}
+
+main > .buttonsprojects {
+    display: grid;
+    gap: 2rem;
+    
+}
+
+main > .buttonsprojects > .loganishuniversebutton {
+    text-decoration: none;
+}
+
+main > .buttonsprojects > .loganishuniversebutton > a > button {
+    padding: 75px;
+    opacity: 1;
+    border: none;
+    background-color: var(--background-color);
+    font-family: 'Rubik', sans-serif;
+
+}
+
+main > .buttonsprojects > .loganishuniversebutton > a > button:hover {
+    border: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+
